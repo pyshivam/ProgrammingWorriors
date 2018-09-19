@@ -8,15 +8,20 @@ body {
     margin: 0;
     height: 100%;
     width: 100%;
+    transition-duration: .9s;
+}
+
+#home {
     font-family: "Josefin Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     background: url("/static/background.png") no-repeat fixed;
-    /*height: 100vh;*/
     background-size: cover;
+    max-width: 100%;
+    /*width: available;*/
+    width: auto;
 }
 
 .body {
-    max-width: 1320px;
-    margin: 0 auto;
+
 }
 
 /* Position the navbar container inside the image */
@@ -25,32 +30,114 @@ body {
     width: 100%;
 }
 
-/* The navbar */
-.topnav {
-    overflow: hidden;
-    background-color: transparent;
-    height: 55px;
-    transition-delay: 2ms;
-
+.nav {
+    height: 50px;
+    width: 100%;
+    margin: 0;
+    position: relative;
 }
 
-/* Navbar links */
-.topnav a {
+.nav-title {
+    float: left;
+    font-size: 25px;
+    border: none;
+}
+
+.nav > .nav-header {
+    display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+    display: inline-block;
+    font-size: 22px;
+    color: #fff;
+    padding: 10px 10px 10px 10px;
+}
+
+.nav > .nav-btn {
+    display: none;
+}
+
+.nav > .nav-links {
+    display: inline;
     float: right;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
     font-size: 18px;
-
+    margin: 2px;
 }
 
-.topnav a:hover {
+.nav > .nav-links > a {
+    display: inline-block;
+    padding: 13px 10px 13px 10px;
+    text-decoration: none;
+    color: #efefef;
+    border: 3px solid transparent;
+}
+
+.nav > .nav-links > a:hover {
     border-bottom: #f2f2f2 solid;
 }
 
-.bg-img {
+.nav > #nav-check {
+    display: none;
+}
 
+@media (max-width: 650px) {
+    .nav > .nav-btn {
+        display: inline-block;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+
+    .nav > .nav-btn > label {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        padding: 13px;
+    }
+
+    .nav > .nav-btn > label:hover {
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    .nav > .nav-btn > label > span {
+        display: block;
+        width: 25px;
+        height: 10px;
+        border-top: 2px solid #eee;
+    }
+
+    .nav > .nav-links {
+        position: absolute;
+        display: block;
+        width: 100%;
+        background-color: transparent;
+        height: 0;
+        /*transition: all 0.1s;*/
+        overflow-y: hidden;
+        top: 50px;
+        left: 0;
+    }
+
+    .nav > .nav-links > a {
+        display: block;
+        width: 100%;
+    }
+
+    .nav > #nav-check:not(:checked) + .nav-links {
+        height: 0px;
+    }
+
+    .nav > #nav-check:checked + .nav-links {
+        height: calc(100vh - 50px);
+        overflow-y: auto;
+        background-color: transparent;
+    }
+}
+
+.bg-img {
+    max-width: 1320px;
+    margin: 0 auto;
 }
 
 .reg-btn {
@@ -66,7 +153,7 @@ body {
     border-radius: 3px;
     border: solid white;
     text-align: center;
-    transition-duration: 100ms;
+    transition: all .4s;
     background-color: rgba(14, 11, 20, 0.44);
 }
 
@@ -81,7 +168,27 @@ body {
     box-shadow: 7px 10px 20px rgba(0, 0, 0, 0.15), 1px 6px 6px rgba(0, 0, 0, 0.24);
 }
 
-@media only screen and (max-width: 600px) {
+#about {
+    height: 100vh;
+}
 
+#FAQ {
+    height: 100vh;
+}
+
+#prize {
+    height: 100vh;
+}
+
+#schedule {
+    height: 100vh;
+}
+
+#guide {
+    height: 100vh;
+}
+
+#home {
+    height: 100vh;
 }
 
