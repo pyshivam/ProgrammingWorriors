@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:600|Open+Sans');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    font-family: "Josefin Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background: url("/static/background.png") no-repeat fixed;
+    /*height: 100vh;*/
+    background-size: cover;
+}
+
+.body {
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+/* Position the navbar container inside the image */
+.container {
+    margin: 0;
+    width: 100%;
+}
+
+/* The navbar */
+.topnav {
+    overflow: hidden;
+    background-color: transparent;
+    height: 55px;
+    transition-delay: 2ms;
+
+}
+
+/* Navbar links */
+.topnav a {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+
+}
+
+.topnav a:hover {
+    border-bottom: #f2f2f2 solid;
+}
+
+.bg-img {
+
+}
+
+.reg-btn {
+    height: 55px;
+    width: 240px;
+    position: absolute;
+    margin-top: 500px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    size: 3rem;
+    padding: 9px;
+    border-radius: 3px;
+    border: solid white;
+    text-align: center;
+    transition-duration: 100ms;
+    background-color: rgba(14, 11, 20, 0.44);
+}
+
+.reg-btn a {
+    text-decoration: none;
+    color: #f2f2f2;
+    font-size: 20px;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.reg-btn:hover {
+    box-shadow: 7px 10px 20px rgba(0, 0, 0, 0.15), 1px 6px 6px rgba(0, 0, 0, 0.24);
+}
+
+@media only screen and (max-width: 600px) {
+
+}
