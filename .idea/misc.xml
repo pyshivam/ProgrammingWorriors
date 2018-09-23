@@ -3,5 +3,8 @@
   <component name="JavaScriptSettings">
     <option name="languageLevel" value="ES6" />
   </component>
+  <component name="ProjectResources">
+    <resource url="https://fonts.googleapis.com/css?family=Josefin+Sans:600|Open+Sans" location="$PROJECT_DIR$/static/home.css" />
+  </component>
   <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.6" project-jdk-type="Python SDK" />
 </project>
