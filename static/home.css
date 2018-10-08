@@ -9,6 +9,8 @@ body {
     margin: 0;
     transition-duration: .9s;
     font-family: "Josefin Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
 }
 
 .body {
@@ -22,6 +24,7 @@ body {
     width: available;
     height: 100vh;
     opacity: 100%;
+    scroll-snap-align: start;
 }
 
 .punch-holder {
@@ -272,6 +275,7 @@ body {
 #about {
     height: fit-content;
     background-color: rgba(78, 171, 233, 1);
+    scroll-snap-align: start;
     /*background: url("/static/images/fabian-grohs-507587-unsplash.jpg") fixed;*/
     /*background-size: cover;*/
 }
@@ -296,6 +300,8 @@ body {
 }
 
 #schedule {
+
+    scroll-snap-align: start;
     height: content-box;
 }
 
@@ -306,7 +312,7 @@ body {
 .schedule-title{
     text-align: center;
     font-size: 35px;
-    color: #00cccc;
+    color: rgba(78, 171, 233, 1);
     padding-top: 20px;
 }
 
@@ -476,6 +482,7 @@ body {
     height: content-box;
     font-size: 23px;
     color: rgba(75, 75, 75, 0.92);
+    scroll-snap-align: start;
     /*background-color: white;*/
 }
 
@@ -489,6 +496,7 @@ body {
 #FAQ {
     padding: 20px;
     height: content-box;
+    scroll-snap-align: start;
 }
 
 .faq ul li {
@@ -505,8 +513,9 @@ body {
 }
 
 
-#prize {
-    height: 150vh;
-    background: url("/static/images/adi-goldstein-671017-unsplash.jpg") fixed;
-    background-size: cover;
-}
+/*#prize {*/
+    /*scroll-snap-align: start;*/
+    /*height: 150vh;*/
+    /*background: url("/static/images/adi-goldstein-671017-unsplash.jpg") fixed;*/
+    /*background-size: cover;*/
+/*}*/
