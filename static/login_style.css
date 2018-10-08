@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:700|Open+Sans');
+
+body{
+    background-color: #00d3ff;
+    display: block;
+}
+
+.cname{
+    text-align: center;
+    font-family: 'Josefin Sans', Arial, Helvetica, sans-serif;
+    color: white;
+    margin: 0 auto 30px;
+    padding-top: 40px;
+    display: block;
+    font-size: 35px;
+}
+
+.sign-up-card {
+    margin: 0 auto;
+    background-color: white;
+    border: white solid 2px;
+    border-radius: 3px;
+    /*height: 450px;*/
+    width: 470px;
+    text-align: center;
+    padding: 40px 40px 20px;
+    display: block;
+    font-family: 'Open Sans', 'AnjaliOldLipi', cursive, sans-serif;
+    font-size: 50px; /* 27, 2vw */
+    /*color: #00d3ff;*/
+    box-shadow: 7px 10px 20px rgba(0, 0, 0, 0.15), 1px 6px 6px rgba(0, 0, 0, 0.24);
+}
+
+input{
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 5px;
+    /*border: #d8d2d4 solid 1px;*/
+    border: 2px solid #e7e7e7;
+    padding: 15px;
+    display: block;
+    margin: 20px auto;
+    transition-duration: .5s;
+    outline-color: rgba(78, 171, 233, 1);
+    font-family: "Source Sans Pro", 'AnjaliOldLipi', sans-serif;
+    font-size: 18px;
+    color: #656863;
+    text-align: left;
+    height: auto;
+    background: #fcfcfc;
+
+}
+
+
+button[type="submit"]{
+    width: 100%;
+    height: auto;
+    padding: 15px;
+    border-radius: 3px;
+    border: 0;
+    margin: 20px auto 0;
+    color: white;
+    background: rgba(78, 171, 233, 1);
+    font-family: 'Josefin Sans', 'AnjaliOldLipi', cursive, sans-serif;
+    font-size: 18px;
+    text-align: center;
+    outline-color: rgba(78, 171, 233, 1);
+    display: block;
+    box-sizing: border-box;
+    /*box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);*/
+    cursor: pointer;
+}
+
+
+button[type="submit"]:hover{
+    background: rgba(78, 171, 233, 1);
+}
+
+
+i {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    float: right;
+    margin-top: 3px;
+}
+
+
+legend{
+    display: block;
+    -webkit-padding-start: 2px;
+    -webkit-padding-end: 2px;
+    /*border: initial none initial;*/
+    border-image: initial;
+    text-align: center;
+    font-weight: 300;
+    color: #444;
+    margin: 0 auto 45px;
+    font-size: 35px;
+    line-height: 38px;
+    text-transform: none;
+    letter-spacing: 0;
+}
+
+
+.google-logo{
+    position: absolute;
+    top: 14px;
+    left: 16px;
+    bottom: 0;
+    right: 0;
+    height: 20px;
+    width: 20px;
+}
+
+
+.google-oauth{
+    position: relative;
+    display: block;
+    color: #444;
+    background: white;
+    border: 1px solid #ddd;
+    font-weight: 600;
+    font-size: 17px;
+    text-align: center;
+    padding: 12px;
+    border-radius: 3px;
+    -webkit-appearance: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    margin: 20px auto;
+    line-height: 1.5;
+    outline-color: rgba(78, 171, 233, 1);
+}
+
+
+.google-oauth:hover{
+    background-color: #dfdfdf;
+    -webkit-transition: background 0.1s;
+    -moz-transition: background 0.1s;
+    -o-transition: background 0.1s;
+    transition: background 0.1s;
+}
+
+
+.forgot_pass{
+    color: #0069ff;
+    box-sizing: border-box;
+    font-family: "Open Sans", "AnjaliOldLipi", helvetica, sans-serif;
+    cursor: pointer;
+    font-size: 17px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+
+.forgot_pass a{
+    text-decoration: none;
+}
+
+
+.footer{
+    text-align: center;
+    color: #ffffff;
+    margin: 20px auto;
+    box-sizing: border-box;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    outline-color: rgba(78, 171, 233, 1);
+}
+
+
+.login{
+    box-sizing: border-box;
+}
+
+
+@media screen and (max-width: 550px) {
+
+    .sign-up-card{
+        width: 100%;
+        border-radius: 0;
+        padding: 40px 20px;
+    }
+
+    body{
+        margin: 0;
+    }
+}
+
+.terms{
+    padding-top: 8px;
+    font-size: 17px;
+    line-height: 1.5;
+    text-align: center;
+    margin: 10px 0 0;
+    color: #666;
+    box-sizing: border-box;
+    display: block;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+
+.terms a{
+    color: #0069ff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.heading{
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: left;
+    font-size: 25px;
+    padding-top: 5px;
+}
+
+.reg{
+    padding: 8px;
+    border-bottom: #666666 solid 1px;
+}

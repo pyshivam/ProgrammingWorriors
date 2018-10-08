@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Insano Downloader</title>
+    <link rel="stylesheet" href="/static/login_style.css">
+</head>
+<body style="background-color: rgba(78, 171, 233, 1)">
+<section class="login">
+    <div class="cname">Programming Warriors</div>
+    <section class="sign-up-card">
+
+        <legend>Log in</legend>
+
+        <form action="#" method="post">
+            <input type="text" placeholder="Username" name="username" required>
+            <input type="password" placeholder="Password" name="passwd" required style="margin-top: 15px">
+            <button type="submit" style="background-color: rgba(78, 171, 233, 1)">
+                Log in <i class="arrow right"></i>
+            </button>
+
+        </form>
+
+        <p class="forgot_pass">
+            <a style="outline-color: #00d3ff;" href={{url_for('forgot_password')}}>Forgot password?</a>
+        </p>
+    </section>
+    <div class="footer">
+        <p>
+            Don't have an account?
+            <a style="outline-color: white;" href={{url_for('signup')}}>Sign Up</a>
+        </p>
+    </div>
+</section>
+</body>
+</html>

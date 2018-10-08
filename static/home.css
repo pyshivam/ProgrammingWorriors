@@ -58,6 +58,8 @@ body {
 .container {
     margin: 0;
     width: 100%;
+    position: relative;
+
 }
 
 .nav {
@@ -268,17 +270,16 @@ body {
 }
 
 #about {
-    height: content-box;
-    background-color: white;
+    height: fit-content;
+    background-color: rgba(78, 171, 233, 1);
     /*background: url("/static/images/fabian-grohs-507587-unsplash.jpg") fixed;*/
     /*background-size: cover;*/
 }
 
 .about-holder{
-    height: 300px;
+    height: fit-content;
     width: 100%;
     padding: 30px;
-    background-color: rgba(78, 171, 233, 1);
 }
 
 .about-title{
@@ -466,6 +467,9 @@ body {
     }
 }
 
+
+
+
 #rules {
     padding: 20px;
     background-color: whitesmoke;
@@ -496,7 +500,7 @@ body {
 }
 
 .question > h3{
-    color: #00cccc;
+    color: rgba(78, 171, 233, 1);
     font-size: 25px;
 }
 

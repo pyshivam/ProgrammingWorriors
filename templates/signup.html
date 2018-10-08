@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Insano Downloader</title>
+    <link rel="stylesheet" href="/static/login_style.css">
+</head>
+<body style="background-color: rgba(78, 171, 233, 1)">
+<section class="login">
+    <div class="cname">Programming Warriors</div>
+    <section class="sign-up-card">
+
+        <legend>Register</legend>
+
+        <form action="#" method="post">
+            <div class="reg heading">College</div>
+            <input type="text" placeholder="College Name" name="clg_name" required>
+            <input type="text" placeholder="Professor/Hod" name="prof_name" required>
+            <input type="email" placeholder="Professor/Hod email" name="prof_email" required>
+            <input type="number" placeholder="Professor/Hod  phone number" name="phone" required>
+            <div class="reg heading">Team</div>
+            <input type="text" placeholder="Team name" name="t_name" required>
+            <input type="text" placeholder="Student Name" name="student_name" required>
+            <input type="text" placeholder="Student Name" name="student_name" required>
+            <input type="number" placeholder="Team contact number" name="t_number" required>
+            <input type="email" placeholder="Email Address" name="email" required>
+            <input type="password" placeholder="Password" name="passwd" required style="margin-top: 15px">
+            <button type="submit">
+                Sign up <i class="arrow right"></i>
+            </button>
+
+        </form>
+
+        <p class="terms">
+            By signing up, you agree to<br class="only-mobile"> the
+            <a href="#" style="outline-color: #00d3ff;">Terms of Service </a>
+            and
+            <a href="#" style="outline-color: #00d3ff;">Privacy Policy</a>
+        </p>
+
+    </section>
+    <div class="footer">
+        <p>
+            Already have an account?
+            <a style="outline-color: white;" href={{ url_for('login') }}>Log In</a>
+        </p>
+    </div>
+</section>
+</body>
+</html>
