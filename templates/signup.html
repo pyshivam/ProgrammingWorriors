@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width">
     <title>Insano Downloader</title>
     <link rel="stylesheet" href="/static/login_style.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="/static/script.js"></script>
 </head>
 <body style="background-color: rgba(78, 171, 233, 1)">
 <section class="login">
@@ -13,20 +15,21 @@
 
         <legend>Register</legend>
 
-        <form action="#" method="post">
+        <form action="{{ url_for("authorize") }}" method="post">
             <div class="reg heading">College</div>
-            <input type="text" placeholder="College Name" name="clg_name" required>
-            <input type="text" placeholder="Professor/Hod" name="prof_name" required>
-            <input type="email" placeholder="Professor/Hod email" name="prof_email" required>
-            <input type="number" placeholder="Professor/Hod  phone number" name="phone" required>
+            <input type="text" placeholder="College Name" name="clg_name" id="clg_name" required>
+            <input type="text" placeholder="Professor/Hod" name="prof_name" id="prof_name" required>
+            <input type="email" placeholder="Professor/Hod email" name="prof_email" id="prof_email" required>
+            <input type="number" placeholder="Professor/Hod  phone number" name="phone" id="phone" required>
             <div class="reg heading">Team</div>
-            <input type="text" placeholder="Team name" name="t_name" required>
-            <input type="text" placeholder="Student Name" name="student_name" required>
-            <input type="text" placeholder="Student Name" name="student_name" required>
-            <input type="number" placeholder="Team contact number" name="t_number" required>
-            <input type="email" placeholder="Email Address" name="email" required>
-            <input type="password" placeholder="Password" name="passwd" required style="margin-top: 15px">
-            <button type="submit">
+            <input type="text" placeholder="Team name" name="t_name" id="t_name" required>
+            <input type="text" placeholder="Student1 Name" name="student_name1" id="student_name1" required>
+            <input type="text" placeholder="Student2 Name" name="student_name2" id="student_name2" required>
+            <input type="number" placeholder="Team contact number" name="t_number" id="t_number" required>
+            <input type="email" placeholder="Email Address" name="email" id="email" required>
+            <!-- <input type="password" placeholder="Password" name="passwd" id="passwd" required style="margin-top: 15px"> -->
+            <input type="text" placeholder="Authorization Code" name="auth" id="auth" required>
+            <button type="button" onclick="call()">
                 Sign up <i class="arrow right"></i>
             </button>
 
