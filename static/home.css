@@ -17,6 +17,7 @@ body {
     margin: 0;
 }
 
+
 #home {
     font-family: "Josefin Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     background: url("/static/images/test_background.jpg") no-repeat fixed;
@@ -26,6 +27,7 @@ body {
     opacity: 100%;
     scroll-snap-align: start;
 }
+
 
 .punch-holder {
 
@@ -38,6 +40,7 @@ body {
     display: inline-block;
 }
 
+
 .punch-line {
     text-align: center;
     color: rgb(174, 174, 174);
@@ -48,6 +51,7 @@ body {
     /*float: left;*/
 }
 
+
 .punch-done {
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: white;
@@ -57,6 +61,7 @@ body {
 
 }
 
+
 /* Position the navbar container inside the image */
 .container {
     margin: 0;
@@ -65,12 +70,14 @@ body {
 
 }
 
+
 .nav {
     height: 50px;
     width: 100%;
     margin: 0;
     position: relative;
 }
+
 
 .nav-title {
     float: left;
@@ -472,8 +479,6 @@ body {
         right: inherit;
     }
 }
-
-
 
 
 #rules {

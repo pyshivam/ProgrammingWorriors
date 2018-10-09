@@ -94,5 +94,10 @@ def authorize():
     return jsonify({"status": 1, "username": username, "password": passwd})
 
 
+@app.route("/login", methods=['POST'])
+def login():
+    pass
+
+
 if __name__ == '__main__':
     app.run()
